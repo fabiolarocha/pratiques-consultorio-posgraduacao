@@ -4,14 +4,11 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-public class Paciente {
+public class Medico {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long Id;
-
-    @Column
-    private long cpf;
+    @GeneratedValue(Strategy = GenerationType.IDENTITY)
+    private long crm;
 
     @Column
     private String nome;
@@ -23,5 +20,6 @@ public class Paciente {
     private long telefone;
 
     @Column
-    private Date dataNascimento;
+    private String especialidade;
+
 }

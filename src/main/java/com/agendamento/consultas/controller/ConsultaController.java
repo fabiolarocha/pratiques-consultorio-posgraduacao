@@ -9,6 +9,7 @@ public class ConsultaController {
 
     @GetMapping
     public String get(){
+
         return "Olá Mundo";
         }
 }
