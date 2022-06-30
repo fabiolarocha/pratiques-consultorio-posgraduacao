@@ -6,9 +6,17 @@ import java.util.Date;
 @Entity
 public class Paciente {
 
+    public long getId() {
+        return Id;
+    }
+
+    public void setId(long id) {
+        Id = id;
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long Id;
+    private long Id;
 
     @Column
     private long cpf;
@@ -20,8 +28,8 @@ public class Paciente {
     private long endereco;
 
     @Column
-    private long telefone;
+    private String telefone;
 
     @Column
-    private Date dataNascimento;
+    private String dataNascimento;
 }

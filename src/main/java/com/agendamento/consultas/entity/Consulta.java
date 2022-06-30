@@ -8,7 +8,7 @@ public class Consulta {
 
     @Id
     @GeneratedValue(Strategy = GenerationType.IDENTITY)
-    private int codigo;
+    private long codigo;
 
     @Column
     private Date data;

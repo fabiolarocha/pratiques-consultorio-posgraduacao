@@ -17,7 +17,7 @@ public class Medico {
     private long endereco;
 
     @Column
-    private long telefone;
+    private String telefone;
 
     @Column
     private String especialidade;
