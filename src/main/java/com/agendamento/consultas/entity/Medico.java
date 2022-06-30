@@ -1,20 +1,27 @@
 package com.agendamento.consultas.entity;
 
+import lombok.Data;
+import lombok.RequiredArgsConstructor;
+
 import javax.persistence.*;
-import java.util.Date;
 
 @Entity
+@Data
+@RequiredArgsConstructor
 public class Medico {
 
     @Id
-    @GeneratedValue(Strategy = GenerationType.IDENTITY)
-    private long crm;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long Id;
+
+    @Column
+    private Long crm;
 
     @Column
     private String nome;
 
     @Column
-    private long endereco;
+    private String endereco;
 
     @Column
     private String telefone;

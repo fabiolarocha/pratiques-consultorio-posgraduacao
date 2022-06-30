@@ -1,31 +1,27 @@
 package com.agendamento.consultas.entity;
 
+import lombok.Data;
+import lombok.RequiredArgsConstructor;
+
 import javax.persistence.*;
-import java.util.Date;
 
 @Entity
+@Data
+@RequiredArgsConstructor
 public class Paciente {
-
-    public long getId() {
-        return Id;
-    }
-
-    public void setId(long id) {
-        Id = id;
-    }
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long Id;
+    private Long Id;
 
     @Column
-    private long cpf;
+    private Long cpf;
 
     @Column
     private String nome;
 
     @Column
-    private long endereco;
+    private String endereco;
 
     @Column
     private String telefone;

@@ -1,20 +1,24 @@
 package com.agendamento.consultas.entity;
 
+import lombok.Data;
+import lombok.RequiredArgsConstructor;
+
 import javax.persistence.*;
-import java.util.Date;
 
 @Entity
+@Data
+@RequiredArgsConstructor
 public class Consulta {
 
     @Id
-    @GeneratedValue(Strategy = GenerationType.IDENTITY)
-    private long codigo;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
     @Column
-    private Date data;
+    private String data;
 
     @Column
-    private Date hora;
+    private String hora;
 
     @Column
     private String observacao;
