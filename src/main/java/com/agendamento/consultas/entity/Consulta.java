@@ -15,10 +15,16 @@ public class Consulta {
     private Long id;
 
     @Column
-    private String data;
+    private String nome;
+
+    @Column
+    private long data;
 
     @Column
     private String hora;
+
+    @Column
+    private String medico;
 
     @Column
     private String observacao;
