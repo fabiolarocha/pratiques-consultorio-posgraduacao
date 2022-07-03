@@ -8,14 +8,14 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class ConsultaDTO {
 
-        @JsonProperty("Id")
-        private Long id;
+        @JsonProperty("id_consulta")
+        private Long idConsulta;
 
-        @JsonProperty("nome")
-        private String nome;
+        @JsonProperty("paciente")
+        private String paciente;
 
         @JsonProperty("data")
-        private long data;
+        private String data;
 
         @JsonProperty("hora")
         private String hora;

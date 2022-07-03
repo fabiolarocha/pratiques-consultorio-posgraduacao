@@ -12,13 +12,13 @@ public class Consulta {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long idConsulta;
 
     @Column
-    private String nome;
+    private String paciente;
 
     @Column
-    private long data;
+    private String data;
 
     @Column
     private String hora;
